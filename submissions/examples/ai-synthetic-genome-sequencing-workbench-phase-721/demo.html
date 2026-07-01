@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:;">
+  <title>AI Synthetic Genome Sequencing Workbench — Phase #721</title>
+  <meta name="description" content="A futuristic AI synthetic genome sequencing workbench with holographic biotechnology aesthetics built with EaseMotion CSS.">
+
+  <!-- EaseMotion CSS Core -->
+  <link rel="stylesheet" href="../../../core/variables.css">
+  <link rel="stylesheet" href="../../../core/base.css">
+  <link rel="stylesheet" href="../../../core/animations.css">
+  <link rel="stylesheet" href="../../../core/utilities.css">
+
+  <!-- EaseMotion CSS Components -->
+  <link rel="stylesheet" href="../../../components/buttons.css">
+  <link rel="stylesheet" href="../../../components/cards.css">
+  <link rel="stylesheet" href="../../../components/badges.css">
+  <link rel="stylesheet" href="../../../components/progress.css">
+  <link rel="stylesheet" href="../../../components/loaders.css">
+  <link rel="stylesheet" href="../../../components/tooltips.css">
+
+  <!-- Custom Showcase Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       HERO SECTION
+       ========================================================== -->
+  <header class="gs-hero" role="banner" aria-label="Genome sequencing workbench hero">
+    <div class="gs-hero__bg" aria-hidden="true"></div>
+    <div class="gs-hero__particles" aria-hidden="true">
+      <span class="gs-particle gs-particle--1"></span>
+      <span class="gs-particle gs-particle--2"></span>
+      <span class="gs-particle gs-particle--3"></span>
+      <span class="gs-particle gs-particle--4"></span>
+      <span class="gs-particle gs-particle--5"></span>
+      <span class="gs-particle gs-particle--6"></span>
+      <span class="gs-particle gs-particle--7"></span>
+      <span class="gs-particle gs-particle--8"></span>
+      <span class="gs-particle gs-particle--9"></span>
+      <span class="gs-particle gs-particle--10"></span>
+    </div>
+    <div class="gs-hero__dna-bg" aria-hidden="true">
+      <span class="gs-dna-strand gs-dna-strand--1"></span>
+      <span class="gs-dna-strand gs-dna-strand--2"></span>
+      <span class="gs-dna-strand gs-dna-strand--3"></span>
+    </div>
+    <div class="gs-hero__inner">
+      <div class="gs-hero__content">
+        <div class="gs-hero__badge ease-fade-in">Phase #721</div>
+        <h1 class="gs-hero__title ease-slide-in-from-left">AI Synthetic Genome<br><span class="gs-hero__highlight">Sequencing Workbench</span></h1>
+        <p class="gs-hero__subtitle ease-fade-in ease-delay-200">Deep learning–accelerated assembly &bull; Real-time variant calling &bull; Synthetic biology design</p>
+        <div class="gs-hero__actions ease-fade-in ease-delay-300">
+          <button class="ease-btn gs-btn gs-btn--primary gs-btn--glow" aria-label="Start genome sequencing">Start Sequencing</button>
+          <button class="ease-btn gs-btn gs-btn--ghost" aria-label="Load reference genome">Load Reference</button>
+        </div>
+      </div>
+      <div class="gs-hero__visual ease-fade-in ease-delay-200">
+        <div class="gs-helix-hero" role="img" aria-label="Animated 3D DNA helix">
+          <div class="gs-helix-hero__strand gs-helix-hero__strand--left" aria-hidden="true">
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+          </div>
+          <div class="gs-helix-hero__strand gs-helix-hero__strand--right" aria-hidden="true">
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+            <span class="gs-helix-hero__rung"></span>
+          </div>
+          <div class="gs-helix-hero__center" aria-hidden="true">
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+            <span class="gs-helix-hero__base"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gs-hero__scroll" aria-hidden="true">
+      <span class="gs-hero__scroll-text">Scroll to explore</span>
+      <span class="gs-hero__scroll-line"></span>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       MAIN LAYOUT
+       ========================================================== -->
+  <div class="gs-layout">
+
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav class="gs-nav" aria-label="Main navigation" role="navigation">
+      <div class="gs-nav__brand">
+        <span class="gs-nav__logo" aria-hidden="true">🧬</span>
+        <span class="gs-nav__name">SynthGen</span>
+      </div>
+      <ul class="gs-nav__list">
+        <li class="gs-nav__item gs-nav__item--active" aria-current="page">
+          <a href="#dashboard" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">📊</span>
+            <span class="gs-nav__label">Dashboard</span>
+          </a>
+        </li>
+        <li class="gs-nav__item">
+          <a href="#pipeline" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">🔬</span>
+            <span class="gs-nav__label">Pipeline</span>
+          </a>
+        </li>
+        <li class="gs-nav__item">
+          <a href="#genomes" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">🧬</span>
+            <span class="gs-nav__label">Genomes</span>
+          </a>
+        </li>
+        <li class="gs-nav__item">
+          <a href="#control" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">⚙️</span>
+            <span class="gs-nav__label">Control</span>
+          </a>
+        </li>
+        <li class="gs-nav__item">
+          <a href="#analytics" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">📈</span>
+            <span class="gs-nav__label">Analytics</span>
+          </a>
+        </li>
+        <li class="gs-nav__item">
+          <a href="#recommend" class="gs-nav__link">
+            <span class="gs-nav__icon" aria-hidden="true">🤖</span>
+            <span class="gs-nav__label">AI Recs</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── Main Content ────────────────────────────────────── -->
+    <main class="gs-content" role="main">
+
+      <!-- ====================================================
+           SECTION: AI GENOME ANALYSIS DASHBOARD
+           ==================================================== -->
+      <section id="dashboard" class="gs-section" aria-labelledby="dashboard-heading">
+        <h2 id="dashboard-heading" class="gs-section__title ease-slide-in-from-left">AI Genome Analysis Dashboard</h2>
+
+        <div class="gs-dashboard-grid">
+          <!-- Sequenced Genomes Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-100" aria-label="Genomes sequenced: 1,247">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">🧬</span>
+              <span class="gs-card__label">Genomes Sequenced</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number">1,247</span>
+            </div>
+            <div class="gs-card__trend gs-card__trend--up" aria-label="Increasing">
+              <span aria-hidden="true">▲</span> +28 today
+            </div>
+          </article>
+
+          <!-- Assembly Rate Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-150" aria-label="Assembly rate: 99.8 percent">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">📏</span>
+              <span class="gs-card__label">Assembly Rate</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number">99.8</span>
+              <span class="gs-card__unit">%</span>
+            </div>
+            <div class="gs-progress" role="progressbar" aria-valuenow="99.8" aria-valuemin="0" aria-valuemax="100">
+              <div class="gs-progress__fill gs-progress__fill--green" style="width: 99.8%"></div>
+            </div>
+          </article>
+
+          <!-- AI Accuracy Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-200" aria-label="AI prediction accuracy: 97.4 percent">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">🤖</span>
+              <span class="gs-card__label">AI Prediction Accuracy</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number">97.4</span>
+              <span class="gs-card__unit">%</span>
+            </div>
+            <div class="gs-progress" role="progressbar" aria-valuenow="97.4" aria-valuemin="0" aria-valuemax="100">
+              <div class="gs-progress__fill gs-progress__fill--cyan" style="width: 97.4%"></div>
+            </div>
+          </article>
+
+          <!-- Active Runs Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-250" aria-label="Active sequencing runs: 12">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">⚡</span>
+              <span class="gs-card__label">Active Runs</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number gs-card__number--accent">12</span>
+            </div>
+            <div class="gs-card__trend gs-card__trend--up" aria-label="Running">
+              <span aria-hidden="true">●</span> 8 queued
+            </div>
+          </article>
+
+          <!-- Variants Found Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-300" aria-label="Variants found: 43,892">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">🔬</span>
+              <span class="gs-card__label">Variants Found</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number">43,892</span>
+            </div>
+            <div class="gs-card__trend gs-card__trend--warning" aria-label="Warning">
+              <span aria-hidden="true">⚠️</span> 12 novel
+            </div>
+          </article>
+
+          <!-- Coverage Depth Card -->
+          <article class="gs-card gs-card--glass gs-card--bio ease-fade-in ease-delay-350" aria-label="Coverage depth: 142x">
+            <div class="gs-card__scanline" aria-hidden="true"></div>
+            <div class="gs-card__header">
+              <span class="gs-card__icon" aria-hidden="true">📡</span>
+              <span class="gs-card__label">Coverage Depth</span>
+            </div>
+            <div class="gs-card__value">
+              <span class="gs-card__number">142</span>
+              <span class="gs-card__unit">x</span>
+            </div>
+            <div class="gs-card__trend gs-card__trend--up" aria-label="Optimal">
+              <span aria-hidden="true">▲</span> Optimal
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: DNA SEQUENCING PIPELINE
+           ==================================================== -->
+      <section id="pipeline" class="gs-section" aria-labelledby="pipeline-heading">
+        <h2 id="pipeline-heading" class="gs-section__title ease-slide-in-from-left">DNA Sequencing Pipeline</h2>
+
+        <div class="gs-pipeline-grid">
+          <!-- Pipeline Steps -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-100">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Active Pipeline Stages</h3>
+              <span class="gs-badge gs-badge--live ease-pulse" aria-live="polite">Running</span>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-pipeline" role="list" aria-label="Sequencing pipeline stages">
+                <div class="gs-pipeline__step gs-pipeline__step--complete" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__check">✓</span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Sample Preparation</span>
+                    <span class="gs-pipeline__status">Complete</span>
+                  </div>
+                  <span class="gs-pipeline__time">12s</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--complete" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__check">✓</span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">DNA Extraction</span>
+                    <span class="gs-pipeline__status">Complete</span>
+                  </div>
+                  <span class="gs-pipeline__time">45s</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--complete" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__check">✓</span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Library Preparation</span>
+                    <span class="gs-pipeline__status">Complete</span>
+                  </div>
+                  <span class="gs-pipeline__time">2m 14s</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--active" role="listitem" aria-current="true">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__spinner"></span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Sequencing Run</span>
+                    <span class="gs-pipeline__status">In Progress — 67%</span>
+                  </div>
+                  <span class="gs-pipeline__time">14m 32s</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--pending" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__dot"></span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Base Calling</span>
+                    <span class="gs-pipeline__status">Queued</span>
+                  </div>
+                  <span class="gs-pipeline__time">—</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--pending" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__dot"></span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Alignment & Assembly</span>
+                    <span class="gs-pipeline__status">Queued</span>
+                  </div>
+                  <span class="gs-pipeline__time">—</span>
+                </div>
+                <div class="gs-pipeline__step gs-pipeline__step--pending" role="listitem">
+                  <div class="gs-pipeline__marker" aria-hidden="true">
+                    <span class="gs-pipeline__dot"></span>
+                  </div>
+                  <div class="gs-pipeline__info">
+                    <span class="gs-pipeline__name">Variant Calling</span>
+                    <span class="gs-pipeline__status">Queued</span>
+                  </div>
+                  <span class="gs-pipeline__time">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sequencing Progress -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-200">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Real-time Sequencing</h3>
+              <span class="gs-badge gs-badge--live ease-pulse" aria-live="polite">67%</span>
+            </header>
+            <div class="gs-panel__body gs-panel__body--center">
+              <div class="gs-sequencing-viz" role="img" aria-label="Animated sequencing progress visualization">
+                <div class="gs-sequencing-viz__bar" aria-hidden="true">
+                  <div class="gs-sequencing-viz__fill" style="width: 67%"></div>
+                </div>
+                <div class="gs-sequencing-viz__bases" aria-hidden="true">
+                  <span class="gs-base gs-base--a"></span>
+                  <span class="gs-base gs-base--t"></span>
+                  <span class="gs-base gs-base--g"></span>
+                  <span class="gs-base gs-base--c"></span>
+                  <span class="gs-base gs-base--a"></span>
+                  <span class="gs-base gs-base--g"></span>
+                  <span class="gs-base gs-base--t"></span>
+                  <span class="gs-base gs-base--c"></span>
+                  <span class="gs-base gs-base--c"></span>
+                  <span class="gs-base gs-base--a"></span>
+                  <span class="gs-base gs-base--t"></span>
+                  <span class="gs-base gs-base--g"></span>
+                </div>
+              </div>
+              <div class="gs-sequencing-stats">
+                <div class="gs-sequencing-stat">
+                  <span class="gs-sequencing-stat__label">Bases Sequenced</span>
+                  <span class="gs-sequencing-stat__value">2.4 Gbp</span>
+                </div>
+                <div class="gs-sequencing-stat">
+                  <span class="gs-sequencing-stat__label">Read Length</span>
+                  <span class="gs-sequencing-stat__value">150 bp</span>
+                </div>
+                <div class="gs-sequencing-stat">
+                  <span class="gs-sequencing-stat__label">Q Score</span>
+                  <span class="gs-sequencing-stat__value">Q38</span>
+                </div>
+                <div class="gs-sequencing-stat">
+                  <span class="gs-sequencing-stat__label">ETA</span>
+                  <span class="gs-sequencing-stat__value">7m 12s</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: GENOME PROGRESS TIMELINE
+           ==================================================== -->
+      <section class="gs-section" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading" class="gs-section__title ease-slide-in-from-left">Genome Progress Timeline</h2>
+
+        <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-100">
+          <div class="gs-panel__scanline" aria-hidden="true"></div>
+          <header class="gs-panel__header">
+            <h3 class="gs-panel__title">Sequencing Project Timeline</h3>
+            <span class="gs-badge gs-badge--success">12 Projects</span>
+          </header>
+          <div class="gs-panel__body">
+            <div class="gs-timeline" role="list" aria-label="Genome sequencing project timeline">
+              <div class="gs-timeline__item gs-timeline__item--complete" role="listitem">
+                <div class="gs-timeline__marker" aria-hidden="true">✓</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T-02:00:00">T-2h</time>
+                  <span class="gs-timeline__event">E. coli K-12 — Complete</span>
+                  <span class="gs-timeline__detail">4.6 Mbp &bull; 100% coverage</span>
+                </div>
+              </div>
+              <div class="gs-timeline__item gs-timeline__item--complete" role="listitem">
+                <div class="gs-timeline__marker" aria-hidden="true">✓</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T-01:30:00">T-1h 30m</time>
+                  <span class="gs-timeline__event">S. cerevisiae S288C — Complete</span>
+                  <span class="gs-timeline__detail">12.1 Mbp &bull; 99.9% coverage</span>
+                </div>
+              </div>
+              <div class="gs-timeline__item gs-timeline__item--complete" role="listitem">
+                <div class="gs-timeline__marker" aria-hidden="true">✓</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T-00:45:00">T-45m</time>
+                  <span class="gs-timeline__event">A. thaliana Col-0 — Complete</span>
+                  <span class="gs-timeline__detail">135 Mbp &bull; 98.7% coverage</span>
+                </div>
+              </div>
+              <div class="gs-timeline__item gs-timeline__item--active" role="listitem" aria-current="true">
+                <div class="gs-timeline__marker" aria-hidden="true">◉</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T+00:00:00">Now</time>
+                  <span class="gs-timeline__event">H. sapiens Chr 22 — In Progress</span>
+                  <span class="gs-timeline__detail">51 Mbp &bull; 67% sequenced</span>
+                </div>
+              </div>
+              <div class="gs-timeline__item gs-timeline__item--pending" role="listitem">
+                <div class="gs-timeline__marker" aria-hidden="true">○</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T+00:30:00">T+30m</time>
+                  <span class="gs-timeline__event">D. melanogaster — Queued</span>
+                  <span class="gs-timeline__detail">180 Mbp &bull; Estimated 2h</span>
+                </div>
+              </div>
+              <div class="gs-timeline__item gs-timeline__item--pending" role="listitem">
+                <div class="gs-timeline__marker" aria-hidden="true">○</div>
+                <div class="gs-timeline__content">
+                  <time class="gs-timeline__time" datetime="T+02:30:00">T+2h 30m</time>
+                  <span class="gs-timeline__event">M. musculus Chr 1 — Queued</span>
+                  <span class="gs-timeline__detail">195 Mbp &bull; Estimated 3h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: SYNTHETIC GENOME CARDS
+           ==================================================== -->
+      <section id="genomes" class="gs-section" aria-labelledby="genomes-heading">
+        <h2 id="genomes-heading" class="gs-section__title ease-slide-in-from-left">Synthetic Genome Library</h2>
+
+        <div class="gs-genome-grid">
+          <article class="gs-genome-card gs-genome-card--complete ease-fade-in ease-delay-100">
+            <div class="gs-genome-card__glow" aria-hidden="true"></div>
+            <div class="gs-genome-card__header">
+              <span class="gs-genome-card__icon" aria-hidden="true">🧬</span>
+              <span class="gs-genome-card__badge">Complete</span>
+            </div>
+            <h4 class="gs-genome-card__name">pSYNTH-241</h4>
+            <p class="gs-genome-card__desc">Synthetic minimal bacterial genome with 473 essential genes</p>
+            <div class="gs-genome-card__stats">
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Length</span>
+                <span class="gs-genome-card__stat-value">531 kbp</span>
+              </div>
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">GC Content</span>
+                <span class="gs-genome-card__stat-value">48.2%</span>
+              </div>
+            </div>
+            <div class="gs-genome-card__action">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">View</button>
+            </div>
+          </article>
+
+          <article class="gs-genome-card gs-genome-card--active ease-fade-in ease-delay-150">
+            <div class="gs-genome-card__glow" aria-hidden="true"></div>
+            <div class="gs-genome-card__header">
+              <span class="gs-genome-card__icon" aria-hidden="true">🧬</span>
+              <span class="gs-genome-card__badge">Synthesizing</span>
+            </div>
+            <h4 class="gs-genome-card__name">pSYNTH-242</h4>
+            <p class="gs-genome-card__desc">Optimized E. coli chassis with 12 synthetic metabolic pathways</p>
+            <div class="gs-genome-card__stats">
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Length</span>
+                <span class="gs-genome-card__stat-value">4.2 Mbp</span>
+              </div>
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Progress</span>
+                <span class="gs-genome-card__stat-value">78%</span>
+              </div>
+            </div>
+            <div class="gs-genome-card__progress" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+              <div class="gs-genome-card__progress-fill" style="width: 78%"></div>
+            </div>
+            <div class="gs-genome-card__action">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">Monitor</button>
+            </div>
+          </article>
+
+          <article class="gs-genome-card gs-genome-card--pending ease-fade-in ease-delay-200">
+            <div class="gs-genome-card__glow" aria-hidden="true"></div>
+            <div class="gs-genome-card__header">
+              <span class="gs-genome-card__icon" aria-hidden="true">🧬</span>
+              <span class="gs-genome-card__badge">Designed</span>
+            </div>
+            <h4 class="gs-genome-card__name">pSYNTH-243</h4>
+            <p class="gs-genome-card__desc">Synthetic yeast chromosome with recoded codon usage</p>
+            <div class="gs-genome-card__stats">
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Length</span>
+                <span class="gs-genome-card__stat-value">1.2 Mbp</span>
+              </div>
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Design</span>
+                <span class="gs-genome-card__stat-value">Finalized</span>
+              </div>
+            </div>
+            <div class="gs-genome-card__action">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Edit Design</button>
+            </div>
+          </article>
+
+          <article class="gs-genome-card gs-genome-card--planned ease-fade-in ease-delay-250">
+            <div class="gs-genome-card__glow" aria-hidden="true"></div>
+            <div class="gs-genome-card__header">
+              <span class="gs-genome-card__icon" aria-hidden="true">🧬</span>
+              <span class="gs-genome-card__badge">Planned</span>
+            </div>
+            <h4 class="gs-genome-card__name">pSYNTH-244</h4>
+            <p class="gs-genome-card__desc">Minimal eukaryotic genome with essential chromatin architecture</p>
+            <div class="gs-genome-card__stats">
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Length</span>
+                <span class="gs-genome-card__stat-value">3.8 Mbp</span>
+              </div>
+              <div class="gs-genome-card__stat">
+                <span class="gs-genome-card__stat-label">Status</span>
+                <span class="gs-genome-card__stat-value">In Design</span>
+              </div>
+            </div>
+            <div class="gs-genome-card__action">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Start Design</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: LABORATORY CONTROL PANEL
+           ==================================================== -->
+      <section id="control" class="gs-section" aria-labelledby="control-heading">
+        <h2 id="control-heading" class="gs-section__title ease-slide-in-from-left">Laboratory Control Panel</h2>
+
+        <div class="gs-control-grid">
+          <!-- Genome Editing Status -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-100">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Genome Editing Status</h3>
+              <span class="gs-badge gs-badge--live ease-pulse" aria-live="polite">Active</span>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-editing-status">
+                <div class="gs-editing-item">
+                  <div class="gs-editing-item__header">
+                    <span class="gs-editing-item__name">CRISPR-Cas9 — Locus A</span>
+                    <span class="gs-editing-item__status gs-editing-item__status--active">Active</span>
+                  </div>
+                  <div class="gs-editing-item__bar">
+                    <div class="gs-editing-item__fill" style="width: 82%" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-editing-item__detail">Editing efficiency: 94.2%</span>
+                </div>
+                <div class="gs-editing-item">
+                  <div class="gs-editing-item__header">
+                    <span class="gs-editing-item__name">Base Editor — Locus B</span>
+                    <span class="gs-editing-item__status gs-editing-item__status--active">Active</span>
+                  </div>
+                  <div class="gs-editing-item__bar">
+                    <div class="gs-editing-item__fill gs-editing-item__fill--cyan" style="width: 45%" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-editing-item__detail">Editing efficiency: 87.6%</span>
+                </div>
+                <div class="gs-editing-item">
+                  <div class="gs-editing-item__header">
+                    <span class="gs-editing-item__name">Prime Editor — Locus C</span>
+                    <span class="gs-editing-item__status gs-editing-item__status--queued">Queued</span>
+                  </div>
+                  <div class="gs-editing-item__bar">
+                    <div class="gs-editing-item__fill gs-editing-item__fill--purple" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-editing-item__detail">Awaiting resources</span>
+                </div>
+                <div class="gs-editing-item">
+                  <div class="gs-editing-item__header">
+                    <span class="gs-editing-item__name">Homologous Recomb. — Locus D</span>
+                    <span class="gs-editing-item__status gs-editing-item__status--complete">Complete</span>
+                  </div>
+                  <div class="gs-editing-item__bar">
+                    <div class="gs-editing-item__fill gs-editing-item__fill--green" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-editing-item__detail">Validated — 99.9% accuracy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Prediction Metrics -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-200">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">AI Prediction Metrics</h3>
+              <span class="gs-badge gs-badge--info">Model v7.21</span>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-ai-metrics">
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">Variant Calling F1</span>
+                  <span class="gs-ai-metric__value">0.983</span>
+                </div>
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">Assembly N50</span>
+                  <span class="gs-ai-metric__value">42.7 Mbp</span>
+                </div>
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">False Discovery Rate</span>
+                  <span class="gs-ai-metric__value">0.12%</span>
+                </div>
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">Sensitivity</span>
+                  <span class="gs-ai-metric__value">99.91%</span>
+                </div>
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">Specificity</span>
+                  <span class="gs-ai-metric__value">99.87%</span>
+                </div>
+                <div class="gs-ai-metric">
+                  <span class="gs-ai-metric__label">Model Throughput</span>
+                  <span class="gs-ai-metric__value">4.2 Gbp/h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: DNA HELIX VISUALIZATION
+           ==================================================== -->
+      <section class="gs-section" aria-labelledby="helix-heading">
+        <h2 id="helix-heading" class="gs-section__title ease-slide-in-from-left">DNA Helix Visualization</h2>
+
+        <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-100">
+          <div class="gs-panel__scanline" aria-hidden="true"></div>
+          <header class="gs-panel__header">
+            <h3 class="gs-panel__title">3D DNA Structure — Interactive Viewer</h3>
+            <span class="gs-badge gs-badge--info">CSS Rendered</span>
+          </header>
+          <div class="gs-panel__body gs-panel__body--center">
+            <div class="gs-dna-viz" role="img" aria-label="Animated 3D DNA double helix visualization">
+              <div class="gs-dna-viz__strand gs-dna-viz__strand--front" aria-hidden="true">
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+              </div>
+              <div class="gs-dna-viz__strand gs-dna-viz__strand--back" aria-hidden="true">
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+                <span class="gs-dna-viz__segment"></span>
+              </div>
+              <div class="gs-dna-viz__connectors" aria-hidden="true">
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--at"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--gc"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--ta"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--cg"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--at"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--gc"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--ta"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--cg"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--at"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--gc"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--ta"></span>
+                <span class="gs-dna-viz__pair gs-dna-viz__pair--cg"></span>
+              </div>
+              <div class="gs-dna-viz__glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: SEQUENCE QUALITY ANALYTICS
+           ==================================================== -->
+      <section id="analytics" class="gs-section" aria-labelledby="quality-heading">
+        <h2 id="quality-heading" class="gs-section__title ease-slide-in-from-left">Sequence Quality Analytics</h2>
+
+        <div class="gs-quality-grid">
+          <!-- Quality Scores -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-100">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Per-Base Quality Scores</h3>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-qual-chart" role="img" aria-label="Quality score distribution bar chart">
+                <div class="gs-qual-chart__row">
+                  <span class="gs-qual-chart__label">Q40</span>
+                  <div class="gs-qual-chart__track">
+                    <div class="gs-qual-chart__bar gs-qual-chart__bar--high" style="width: 72%" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-qual-chart__value">72%</span>
+                </div>
+                <div class="gs-qual-chart__row">
+                  <span class="gs-qual-chart__label">Q30</span>
+                  <div class="gs-qual-chart__track">
+                    <div class="gs-qual-chart__bar gs-qual-chart__bar--good" style="width: 18%" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-qual-chart__value">18%</span>
+                </div>
+                <div class="gs-qual-chart__row">
+                  <span class="gs-qual-chart__label">Q20</span>
+                  <div class="gs-qual-chart__track">
+                    <div class="gs-qual-chart__bar gs-qual-chart__bar--medium" style="width: 7%" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-qual-chart__value">7%</span>
+                </div>
+                <div class="gs-qual-chart__row">
+                  <span class="gs-qual-chart__label">Q10</span>
+                  <div class="gs-qual-chart__track">
+                    <div class="gs-qual-chart__bar gs-qual-chart__bar--low" style="width: 3%" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-qual-chart__value">3%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Base Composition -->
+          <div class="gs-panel gs-panel--glass ease-fade-in ease-delay-200">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Base Composition</h3>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-base-comp" role="img" aria-label="DNA base composition chart">
+                <div class="gs-base-comp__item">
+                  <span class="gs-base-comp__label">Adenine (A)</span>
+                  <div class="gs-base-comp__track">
+                    <div class="gs-base-comp__bar gs-base-comp__bar--a" style="width: 30.2%" role="progressbar" aria-valuenow="30.2" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-base-comp__value">30.2%</span>
+                </div>
+                <div class="gs-base-comp__item">
+                  <span class="gs-base-comp__label">Thymine (T)</span>
+                  <div class="gs-base-comp__track">
+                    <div class="gs-base-comp__bar gs-base-comp__bar--t" style="width: 29.8%" role="progressbar" aria-valuenow="29.8" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-base-comp__value">29.8%</span>
+                </div>
+                <div class="gs-base-comp__item">
+                  <span class="gs-base-comp__label">Guanine (G)</span>
+                  <div class="gs-base-comp__track">
+                    <div class="gs-base-comp__bar gs-base-comp__bar--g" style="width: 20.1%" role="progressbar" aria-valuenow="20.1" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-base-comp__value">20.1%</span>
+                </div>
+                <div class="gs-base-comp__item">
+                  <span class="gs-base-comp__label">Cytosine (C)</span>
+                  <div class="gs-base-comp__track">
+                    <div class="gs-base-comp__bar gs-base-comp__bar--c" style="width: 19.9%" role="progressbar" aria-valuenow="19.9" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span class="gs-base-comp__value">19.9%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Read Statistics -->
+          <div class="gs-panel gs-panel--glass gs-panel--wide ease-fade-in ease-delay-300">
+            <div class="gs-panel__scanline" aria-hidden="true"></div>
+            <header class="gs-panel__header">
+              <h3 class="gs-panel__title">Read Statistics Summary</h3>
+            </header>
+            <div class="gs-panel__body">
+              <div class="gs-read-stats">
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">Total Reads</span>
+                  <span class="gs-read-stat__value">42.7M</span>
+                </div>
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">Mapped Reads</span>
+                  <span class="gs-read-stat__value">41.2M (96.5%)</span>
+                </div>
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">Duplicates</span>
+                  <span class="gs-read-stat__value">2.1M (4.9%)</span>
+                </div>
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">Mean Quality</span>
+                  <span class="gs-read-stat__value">Q37.8</span>
+                </div>
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">GC Content</span>
+                  <span class="gs-read-stat__value">41.3%</span>
+                </div>
+                <div class="gs-read-stat">
+                  <span class="gs-read-stat__label">N Content</span>
+                  <span class="gs-read-stat__value">0.02%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: AI RECOMMENDATIONS PANEL
+           ==================================================== -->
+      <section id="recommend" class="gs-section" aria-labelledby="recommend-heading">
+        <h2 id="recommend-heading" class="gs-section__title ease-slide-in-from-left">AI Recommendations</h2>
+
+        <div class="gs-recommend-grid">
+          <article class="gs-recommend gs-recommend--critical ease-fade-in ease-delay-100" role="alert" aria-live="assertive">
+            <div class="gs-recommend__glow" aria-hidden="true"></div>
+            <div class="gs-recommend__header">
+              <span class="gs-recommend__icon" aria-hidden="true">⚠️</span>
+              <span class="gs-recommend__badge">Critical</span>
+            </div>
+            <h4 class="gs-recommend__title">Low Coverage Detected in Region Chr22:18,245,100-18,312,400</h4>
+            <p class="gs-recommend__desc">Coverage depth dropped to 12x. AI recommends resequencing with increased cycle count.</p>
+            <div class="gs-recommend__actions">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">Resequence</button>
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Ignore</button>
+            </div>
+          </article>
+
+          <article class="gs-recommend gs-recommend--high ease-fade-in ease-delay-200" role="alert" aria-live="assertive">
+            <div class="gs-recommend__glow" aria-hidden="true"></div>
+            <div class="gs-recommend__header">
+              <span class="gs-recommend__icon" aria-hidden="true">🔬</span>
+              <span class="gs-recommend__badge">High Priority</span>
+            </div>
+            <h4 class="gs-recommend__title">Novel Variant Cluster in pSYNTH-242</h4>
+            <p class="gs-recommend__desc">AI detected 3 unexpected indels in synthetic region. Manual curation recommended.</p>
+            <div class="gs-recommend__actions">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">Review</button>
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Dismiss</button>
+            </div>
+          </article>
+
+          <article class="gs-recommend gs-recommend--medium ease-fade-in ease-delay-300" role="status" aria-live="polite">
+            <div class="gs-recommend__glow" aria-hidden="true"></div>
+            <div class="gs-recommend__header">
+              <span class="gs-recommend__icon" aria-hidden="true">🧬</span>
+              <span class="gs-recommend__badge">Suggestion</span>
+            </div>
+            <h4 class="gs-recommend__title">Optimize Primer Design for Locus C</h4>
+            <p class="gs-recommend__desc">Alternative primer pair predicted to improve editing efficiency by 12.4%.</p>
+            <div class="gs-recommend__actions">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">Apply</button>
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Details</button>
+            </div>
+          </article>
+
+          <article class="gs-recommend gs-recommend--info ease-fade-in ease-delay-350" role="status" aria-live="polite">
+            <div class="gs-recommend__glow" aria-hidden="true"></div>
+            <div class="gs-recommend__header">
+              <span class="gs-recommend__icon" aria-hidden="true">📊</span>
+              <span class="gs-recommend__badge">Info</span>
+            </div>
+            <h4 class="gs-recommend__title">Reference Genome Update Available</h4>
+            <p class="gs-recommend__desc">GRCh38.p14 patch release contains 142 new contigs relevant to your analysis.</p>
+            <div class="gs-recommend__actions">
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--primary">Update</button>
+              <button class="ease-btn gs-btn gs-btn--small gs-btn--ghost">Release Notes</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           FOOTER
+           ==================================================== -->
+      <footer class="gs-footer" role="contentinfo">
+        <div class="gs-footer__inner">
+          <div class="gs-footer__brand">
+            <span class="gs-footer__logo" aria-hidden="true">🧬</span>
+            <span class="gs-footer__name">SynthGen Workbench Phase #721</span>
+          </div>
+          <p class="gs-footer__text">
+            AI Synthetic Genome Sequencing Workbench &mdash; Phase #721 Showcase<br>
+            Built with <a href="https://github.com/Nilamma19/EaseMotion-css" target="_blank" rel="noopener noreferrer">EaseMotion CSS</a> &mdash; Zero JavaScript, 60fps optimized
+          </p>
+          <div class="gs-footer__status">
+            <span class="gs-footer__status-dot" aria-hidden="true"></span>
+            <span>All sequencers operational</span>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
