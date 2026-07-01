@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:;">
+  <title>Zero-Trust Holographic Security Operations Center — Phase #707</title>
+  <meta name="description" content="A futuristic Zero-Trust Security Operations Center with holographic cyber-security aesthetics built with EaseMotion CSS.">
+
+  <!-- EaseMotion CSS Core -->
+  <link rel="stylesheet" href="../../../core/variables.css">
+  <link rel="stylesheet" href="../../../core/base.css">
+  <link rel="stylesheet" href="../../../core/animations.css">
+  <link rel="stylesheet" href="../../../core/utilities.css">
+
+  <!-- EaseMotion CSS Components -->
+  <link rel="stylesheet" href="../../../components/buttons.css">
+  <link rel="stylesheet" href="../../../components/cards.css">
+  <link rel="stylesheet" href="../../../components/badges.css">
+  <link rel="stylesheet" href="../../../components/progress.css">
+  <link rel="stylesheet" href="../../../components/loaders.css">
+  <link rel="stylesheet" href="../../../components/tooltips.css">
+
+  <!-- Custom Showcase Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       HERO SECTION
+       ========================================================== -->
+  <header class="zt-hero" role="banner" aria-label="Security Operations Center hero">
+    <div class="zt-hero__bg" aria-hidden="true"></div>
+    <div class="zt-hero__particles" aria-hidden="true">
+      <span class="zt-particle zt-particle--1"></span>
+      <span class="zt-particle zt-particle--2"></span>
+      <span class="zt-particle zt-particle--3"></span>
+      <span class="zt-particle zt-particle--4"></span>
+      <span class="zt-particle zt-particle--5"></span>
+      <span class="zt-particle zt-particle--6"></span>
+      <span class="zt-particle zt-particle--7"></span>
+      <span class="zt-particle zt-particle--8"></span>
+      <span class="zt-particle zt-particle--9"></span>
+      <span class="zt-particle zt-particle--10"></span>
+      <span class="zt-particle zt-particle--11"></span>
+      <span class="zt-particle zt-particle--12"></span>
+    </div>
+    <div class="zt-hero__inner">
+      <div class="zt-hero__content">
+        <div class="zt-hero__badge ease-fade-in">Phase #707</div>
+        <h1 class="zt-hero__title ease-slide-in-from-left">Zero-Trust Holographic<br><span class="zt-hero__highlight">Security Operations Center</span></h1>
+        <p class="zt-hero__subtitle ease-fade-in ease-delay-200">Real-time threat intelligence &bull; AI-powered defense &bull; Quantum-safe authentication</p>
+        <div class="zt-hero__actions ease-fade-in ease-delay-300">
+          <button class="ease-btn zt-btn zt-btn--primary zt-btn--glow" aria-label="Activate security protocol">Activate Protocol</button>
+          <button class="ease-btn zt-btn zt-btn--ghost" aria-label="View live threat feed">Live Feed</button>
+        </div>
+      </div>
+      <div class="zt-hero__visual ease-fade-in ease-delay-200">
+        <div class="zt-hologram" role="img" aria-label="Animated holographic security shield">
+          <div class="zt-hologram__ring zt-hologram__ring--1" aria-hidden="true"></div>
+          <div class="zt-hologram__ring zt-hologram__ring--2" aria-hidden="true"></div>
+          <div class="zt-hologram__ring zt-hologram__ring--3" aria-hidden="true"></div>
+          <div class="zt-hologram__shield" aria-hidden="true">
+            <span class="zt-hologram__icon" aria-hidden="true">🛡️</span>
+          </div>
+          <div class="zt-hologram__scan" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+    <div class="zt-hero__scroll" aria-hidden="true">
+      <span class="zt-hero__scroll-text">Scroll to explore</span>
+      <span class="zt-hero__scroll-line"></span>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       MAIN LAYOUT
+       ========================================================== -->
+  <div class="zt-layout">
+
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav class="zt-nav" aria-label="Main navigation" role="navigation">
+      <div class="zt-nav__brand">
+        <span class="zt-nav__logo" aria-hidden="true">✦</span>
+        <span class="zt-nav__name">ZT-SOC</span>
+      </div>
+      <ul class="zt-nav__list">
+        <li class="zt-nav__item zt-nav__item--active" aria-current="page">
+          <a href="#dashboard" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">📊</span>
+            <span class="zt-nav__label">Dashboard</span>
+          </a>
+        </li>
+        <li class="zt-nav__item">
+          <a href="#threats" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">⚠️</span>
+            <span class="zt-nav__label">Threats</span>
+          </a>
+        </li>
+        <li class="zt-nav__item">
+          <a href="#network" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">🌐</span>
+            <span class="zt-nav__label">Network</span>
+          </a>
+        </li>
+        <li class="zt-nav__item">
+          <a href="#auth" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">🔐</span>
+            <span class="zt-nav__label">Auth</span>
+          </a>
+        </li>
+        <li class="zt-nav__item">
+          <a href="#analytics" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">📈</span>
+            <span class="zt-nav__label">Analytics</span>
+          </a>
+        </li>
+        <li class="zt-nav__item">
+          <a href="#incidents" class="zt-nav__link">
+            <span class="zt-nav__icon" aria-hidden="true">🚨</span>
+            <span class="zt-nav__label">Incidents</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ── Main Content ────────────────────────────────────── -->
+    <main class="zt-content" role="main">
+
+      <!-- ====================================================
+           SECTION: HOLOGRAPHIC DASHBOARD
+           ==================================================== -->
+      <section id="dashboard" class="zt-section" aria-labelledby="dashboard-heading">
+        <h2 id="dashboard-heading" class="zt-section__title ease-slide-in-from-left">Holographic Dashboard</h2>
+
+        <div class="zt-dashboard-grid">
+          <!-- Security Posture Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-100" aria-label="Security posture: 94.7 percent">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">🛡️</span>
+              <span class="zt-card__label">Security Posture</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number">94.7</span>
+              <span class="zt-card__unit">%</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--up" aria-label="Improving">
+              <span aria-hidden="true">▲</span> +2.3% this hour
+            </div>
+            <div class="zt-progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="zt-progress__fill" style="width: 95%"></div>
+            </div>
+          </article>
+
+          <!-- Active Threats Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-150" aria-label="Active threats: 7">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">⚠️</span>
+              <span class="zt-card__label">Active Threats</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number zt-card__number--danger">7</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--danger" aria-label="Critical">
+              <span aria-hidden="true">●</span> 3 critical
+            </div>
+            <div class="zt-threat-indicators" aria-hidden="true">
+              <span class="zt-threat-dot zt-threat-dot--critical"></span>
+              <span class="zt-threat-dot zt-threat-dot--critical"></span>
+              <span class="zt-threat-dot zt-threat-dot--critical"></span>
+              <span class="zt-threat-dot zt-threat-dot--high"></span>
+              <span class="zt-threat-dot zt-threat-dot--high"></span>
+              <span class="zt-threat-dot zt-threat-dot--medium"></span>
+              <span class="zt-threat-dot zt-threat-dot--low"></span>
+            </div>
+          </article>
+
+          <!-- AI Defense Score Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-200" aria-label="AI defense score: 98.2 percent">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">🤖</span>
+              <span class="zt-card__label">AI Defense Score</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number">98.2</span>
+              <span class="zt-card__unit">%</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--up" aria-label="Optimal">
+              <span aria-hidden="true">▲</span> Optimal
+            </div>
+            <div class="zt-progress" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+              <div class="zt-progress__fill zt-progress__fill--cyan" style="width: 98%"></div>
+            </div>
+          </article>
+
+          <!-- Zero-Trust Score Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-250" aria-label="Zero-trust score: 96.3 percent">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">🔐</span>
+              <span class="zt-card__label">Zero-Trust Score</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number">96.3</span>
+              <span class="zt-card__unit">%</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--up" aria-label="Compliant">
+              <span aria-hidden="true">▲</span> Compliant
+            </div>
+            <div class="zt-progress" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+              <div class="zt-progress__fill zt-progress__fill--purple" style="width: 96%"></div>
+            </div>
+          </article>
+
+          <!-- Network Traffic Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-300" aria-label="Network traffic: 2.4 terabytes per second">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">📡</span>
+              <span class="zt-card__label">Network Traffic</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number">2.4</span>
+              <span class="zt-card__unit">Tbps</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--up" aria-label="Stable">
+              <span aria-hidden="true">▲</span> Stable
+            </div>
+          </article>
+
+          <!-- Blocked Threats Card -->
+          <article class="zt-card zt-card--glass zt-card--hologram ease-fade-in ease-delay-350" aria-label="Blocked threats today: 12,847">
+            <div class="zt-card__scanline" aria-hidden="true"></div>
+            <div class="zt-card__header">
+              <span class="zt-card__icon" aria-hidden="true">🚫</span>
+              <span class="zt-card__label">Blocked Today</span>
+            </div>
+            <div class="zt-card__value">
+              <span class="zt-card__number">12,847</span>
+            </div>
+            <div class="zt-card__trend zt-card__trend--up" aria-label="Blocked">
+              <span aria-hidden="true">▲</span> +342 last hour
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: THREAT MONITORING PANEL
+           ==================================================== -->
+      <section id="threats" class="zt-section" aria-labelledby="threats-heading">
+        <h2 id="threats-heading" class="zt-section__title ease-slide-in-from-left">Threat Monitoring Panel</h2>
+
+        <div class="zt-threat-grid">
+          <!-- Threat Radar -->
+          <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-100">
+            <div class="zt-panel__scanline" aria-hidden="true"></div>
+            <header class="zt-panel__header">
+              <h3 class="zt-panel__title">Threat Radar</h3>
+              <span class="zt-badge zt-badge--live ease-pulse" aria-live="polite">Live</span>
+            </header>
+            <div class="zt-panel__body zt-panel__body--center">
+              <div class="zt-radar" role="img" aria-label="Animated threat radar scanning">
+                <div class="zt-radar__ring zt-radar__ring--1" aria-hidden="true"></div>
+                <div class="zt-radar__ring zt-radar__ring--2" aria-hidden="true"></div>
+                <div class="zt-radar__ring zt-radar__ring--3" aria-hidden="true"></div>
+                <div class="zt-radar__ring zt-radar__ring--4" aria-hidden="true"></div>
+                <div class="zt-radar__sweep" aria-hidden="true"></div>
+                <div class="zt-radar__blip zt-radar__blip--1" aria-hidden="true"></div>
+                <div class="zt-radar__blip zt-radar__blip--2" aria-hidden="true"></div>
+                <div class="zt-radar__blip zt-radar__blip--3" aria-hidden="true"></div>
+                <div class="zt-radar__blip zt-radar__blip--4" aria-hidden="true"></div>
+                <div class="zt-radar__blip zt-radar__blip--5" aria-hidden="true"></div>
+                <div class="zt-radar__center" aria-hidden="true">✦</div>
+              </div>
+              <div class="zt-radar__legend">
+                <span class="zt-radar__legend-item"><span class="zt-radar__legend-dot zt-radar__legend-dot--critical" aria-hidden="true"></span> Critical</span>
+                <span class="zt-radar__legend-item"><span class="zt-radar__legend-dot zt-radar__legend-dot--high" aria-hidden="true"></span> High</span>
+                <span class="zt-radar__legend-item"><span class="zt-radar__legend-dot zt-radar__legend-dot--medium" aria-hidden="true"></span> Medium</span>
+                <span class="zt-radar__legend-item"><span class="zt-radar__legend-dot zt-radar__legend-dot--low" aria-hidden="true"></span> Low</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Threat Feed -->
+          <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-200">
+            <div class="zt-panel__scanline" aria-hidden="true"></div>
+            <header class="zt-panel__header">
+              <h3 class="zt-panel__title">Live Threat Feed</h3>
+              <span class="zt-badge zt-badge--alert" aria-live="polite">7 Active</span>
+            </header>
+            <div class="zt-panel__body">
+              <div class="zt-feed">
+                <article class="zt-feed__item zt-feed__item--critical" role="alert" aria-live="assertive">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">SQL Injection Attempt</span>
+                    <span class="zt-feed__meta">Source: 185.220.101.x &bull; 2s ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+                <article class="zt-feed__item zt-feed__item--critical" role="alert" aria-live="assertive">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">Ransomware Payload Detected</span>
+                    <span class="zt-feed__meta">Source: 45.33.32.x &bull; 12s ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+                <article class="zt-feed__item zt-feed__item--high" role="alert" aria-live="polite">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">DDoS Amplification Pattern</span>
+                    <span class="zt-feed__meta">Source: 78.46.89.x &bull; 45s ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+                <article class="zt-feed__item zt-feed__item--high" role="alert" aria-live="polite">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">Credential Stuffing Attack</span>
+                    <span class="zt-feed__meta">Source: 192.168.1.x &bull; 1m ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+                <article class="zt-feed__item zt-feed__item--medium" role="status" aria-live="polite">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">Port Scan Detected</span>
+                    <span class="zt-feed__meta">Source: 103.235.46.x &bull; 3m ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+                <article class="zt-feed__item zt-feed__item--low" role="status" aria-live="polite">
+                  <span class="zt-feed__severity" aria-hidden="true"></span>
+                  <div class="zt-feed__content">
+                    <span class="zt-feed__title">DNS Query Anomaly</span>
+                    <span class="zt-feed__meta">Source: 8.8.8.x &bull; 5m ago</span>
+                  </div>
+                  <span class="zt-feed__action" aria-label="Block threat">Block</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: NETWORK TOPOLOGY VISUALIZATION
+           ==================================================== -->
+      <section id="network" class="zt-section" aria-labelledby="network-heading">
+        <h2 id="network-heading" class="zt-section__title ease-slide-in-from-left">Network Topology Visualization</h2>
+
+        <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-100">
+          <div class="zt-panel__scanline" aria-hidden="true"></div>
+          <header class="zt-panel__header">
+            <h3 class="zt-panel__title">Live Network Map</h3>
+            <span class="zt-badge zt-badge--live ease-pulse" aria-live="polite">Active</span>
+          </header>
+          <div class="zt-panel__body">
+            <div class="zt-topology" role="img" aria-label="Network topology map showing connected nodes">
+              <!-- Central Hub -->
+              <div class="zt-topo-node zt-topo-node--hub" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">🛡️</span>
+                <span class="zt-topo-node__label">Core FW</span>
+              </div>
+
+              <!-- Perimeter Nodes -->
+              <div class="zt-topo-node zt-topo-node--perimeter zt-topo-node--1" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">🌐</span>
+                <span class="zt-topo-node__label">Edge GW</span>
+              </div>
+              <div class="zt-topo-node zt-topo-node--perimeter zt-topo-node--2" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">🔒</span>
+                <span class="zt-topo-node__label">VPN GW</span>
+              </div>
+              <div class="zt-topo-node zt-topo-node--perimeter zt-topo-node--3" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">☁️</span>
+                <span class="zt-topo-node__label">Cloud GW</span>
+              </div>
+
+              <!-- Internal Nodes -->
+              <div class="zt-topo-node zt-topo-node--internal zt-topo-node--4" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">🗄️</span>
+                <span class="zt-topo-node__label">DB Cluster</span>
+              </div>
+              <div class="zt-topo-node zt-topo-node--internal zt-topo-node--5" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">⚡</span>
+                <span class="zt-topo-node__label">API GW</span>
+              </div>
+              <div class="zt-topo-node zt-topo-node--internal zt-topo-node--6" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">📊</span>
+                <span class="zt-topo-node__label">Analytics</span>
+              </div>
+              <div class="zt-topo-node zt-topo-node--internal zt-topo-node--7" aria-hidden="true">
+                <span class="zt-topo-node__pulse" aria-hidden="true"></span>
+                <span class="zt-topo-node__icon">🤖</span>
+                <span class="zt-topo-node__label">AI Engine</span>
+              </div>
+
+              <!-- Connection Lines (CSS only) -->
+              <div class="zt-topo-line zt-topo-line--1" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--2" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--3" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--4" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--5" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--6" aria-hidden="true"></div>
+              <div class="zt-topo-line zt-topo-line--7" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: ZERO-TRUST AUTHENTICATION PANEL
+           ==================================================== -->
+      <section id="auth" class="zt-section" aria-labelledby="auth-heading">
+        <h2 id="auth-heading" class="zt-section__title ease-slide-in-from-left">Zero-Trust Authentication Panel</h2>
+
+        <div class="zt-auth-grid">
+          <!-- Access Verification Timeline -->
+          <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-100">
+            <div class="zt-panel__scanline" aria-hidden="true"></div>
+            <header class="zt-panel__header">
+              <h3 class="zt-panel__title">Access Verification Timeline</h3>
+              <span class="zt-badge zt-badge--success">Verified</span>
+            </header>
+            <div class="zt-panel__body">
+              <div class="zt-timeline" role="list" aria-label="Access verification events">
+                <div class="zt-timeline__item zt-timeline__item--verified" role="listitem">
+                  <div class="zt-timeline__marker" aria-hidden="true"></div>
+                  <div class="zt-timeline__content">
+                    <time class="zt-timeline__time" datetime="T-00:00:00">T+00:00</time>
+                    <span class="zt-timeline__event">MFA Challenge — Passed</span>
+                    <span class="zt-timeline__detail">Biometric + TOTP verification</span>
+                  </div>
+                </div>
+                <div class="zt-timeline__item zt-timeline__item--verified" role="listitem">
+                  <div class="zt-timeline__marker" aria-hidden="true"></div>
+                  <div class="zt-timeline__content">
+                    <time class="zt-timeline__time" datetime="T+00:00:12">T+00:12</time>
+                    <span class="zt-timeline__event">Device Trust — Confirmed</span>
+                    <span class="zt-timeline__detail">Hardware attestation valid</span>
+                  </div>
+                </div>
+                <div class="zt-timeline__item zt-timeline__item--verified" role="listitem">
+                  <div class="zt-timeline__marker" aria-hidden="true"></div>
+                  <div class="zt-timeline__content">
+                    <time class="zt-timeline__time" datetime="T+00:00:24">T+00:24</time>
+                    <span class="zt-timeline__event">Context Analysis — Low Risk</span>
+                    <span class="zt-timeline__detail">Geo-location, time, behavior match</span>
+                  </div>
+                </div>
+                <div class="zt-timeline__item zt-timeline__item--verified" role="listitem">
+                  <div class="zt-timeline__marker" aria-hidden="true"></div>
+                  <div class="zt-timeline__content">
+                    <time class="zt-timeline__time" datetime="T+00:00:36">T+00:36</time>
+                    <span class="zt-timeline__event">Policy Evaluation — Granted</span>
+                    <span class="zt-timeline__detail">Least-privilege access applied</span>
+                  </div>
+                </div>
+                <div class="zt-timeline__item zt-timeline__item--current" role="listitem" aria-current="true">
+                  <div class="zt-timeline__marker" aria-hidden="true"></div>
+                  <div class="zt-timeline__content">
+                    <time class="zt-timeline__time" datetime="T+00:00:48">T+00:48</time>
+                    <span class="zt-timeline__event">Session Active — Monitoring</span>
+                    <span class="zt-timeline__detail">Continuous verification enabled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Authentication Status Cards -->
+          <div class="zt-auth-status ease-fade-in ease-delay-200">
+            <div class="zt-panel zt-panel--glass">
+              <div class="zt-panel__scanline" aria-hidden="true"></div>
+              <header class="zt-panel__header">
+                <h3 class="zt-panel__title">Authentication Factors</h3>
+                <span class="zt-badge zt-badge--success">All Active</span>
+              </header>
+              <div class="zt-panel__body">
+                <div class="zt-auth-factor">
+                  <div class="zt-auth-factor__header">
+                    <span class="zt-auth-factor__name">Biometric Verification</span>
+                    <span class="zt-auth-factor__status zt-auth-factor__status--active">Active</span>
+                  </div>
+                  <div class="zt-auth-factor__bar">
+                    <div class="zt-auth-factor__fill" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-auth-factor">
+                  <div class="zt-auth-factor__header">
+                    <span class="zt-auth-factor__name">Hardware Token</span>
+                    <span class="zt-auth-factor__status zt-auth-factor__status--active">Active</span>
+                  </div>
+                  <div class="zt-auth-factor__bar">
+                    <div class="zt-auth-factor__fill" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-auth-factor">
+                  <div class="zt-auth-factor__header">
+                    <span class="zt-auth-factor__name">Behavioral Analysis</span>
+                    <span class="zt-auth-factor__status zt-auth-factor__status--active">Active</span>
+                  </div>
+                  <div class="zt-auth-factor__bar">
+                    <div class="zt-auth-factor__fill" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-auth-factor">
+                  <div class="zt-auth-factor__header">
+                    <span class="zt-auth-factor__name">Network Context</span>
+                    <span class="zt-auth-factor__status zt-auth-factor__status--active">Active</span>
+                  </div>
+                  <div class="zt-auth-factor__bar">
+                    <div class="zt-auth-factor__fill" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-auth-factor">
+                  <div class="zt-auth-factor__header">
+                    <span class="zt-auth-factor__name">Risk Score</span>
+                    <span class="zt-auth-factor__status zt-auth-factor__status--low">Low (12)</span>
+                  </div>
+                  <div class="zt-auth-factor__bar">
+                    <div class="zt-auth-factor__fill zt-auth-factor__fill--green" style="width: 12%" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Defense Metrics -->
+            <div class="zt-panel zt-panel--glass zt-margin-top">
+              <div class="zt-panel__scanline" aria-hidden="true"></div>
+              <header class="zt-panel__header">
+                <h3 class="zt-panel__title">AI Defense Metrics</h3>
+                <span class="zt-badge zt-badge--info">Learning</span>
+              </header>
+              <div class="zt-panel__body">
+                <div class="zt-ai-metrics">
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">Threat Detection Rate</span>
+                    <span class="zt-ai-metric__value">99.97%</span>
+                  </div>
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">False Positive Rate</span>
+                    <span class="zt-ai-metric__value">0.03%</span>
+                  </div>
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">Avg Response Time</span>
+                    <span class="zt-ai-metric__value">0.4ms</span>
+                  </div>
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">Models Active</span>
+                    <span class="zt-ai-metric__value">12</span>
+                  </div>
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">Threats Neutralized</span>
+                    <span class="zt-ai-metric__value">847,231</span>
+                  </div>
+                  <div class="zt-ai-metric">
+                    <span class="zt-ai-metric__label">Uptime</span>
+                    <span class="zt-ai-metric__value">99.999%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: LIVE CYBER ACTIVITY GRID
+           ==================================================== -->
+      <section id="analytics" class="zt-section" aria-labelledby="activity-heading">
+        <h2 id="activity-heading" class="zt-section__title ease-slide-in-from-left">Live Cyber Activity Grid</h2>
+
+        <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-100">
+          <div class="zt-panel__scanline" aria-hidden="true"></div>
+          <header class="zt-panel__header">
+            <h3 class="zt-panel__title">Real-Time Activity Stream</h3>
+            <span class="zt-badge zt-badge--live ease-pulse" aria-live="polite">Live</span>
+          </header>
+          <div class="zt-panel__body">
+            <div class="zt-activity-grid" role="log" aria-label="Live cyber activity log" aria-live="polite">
+              <div class="zt-activity-row zt-activity-row--incoming">
+                <span class="zt-activity-row__time">12:47:23</span>
+                <span class="zt-activity-row__type zt-activity-row__type--allow">ALLOW</span>
+                <span class="zt-activity-row__src">10.0.12.45</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">192.168.1.100</span>
+                <span class="zt-activity-row__proto">HTTPS</span>
+                <span class="zt-activity-row__action">Verified</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--blocked">
+                <span class="zt-activity-row__time">12:47:21</span>
+                <span class="zt-activity-row__type zt-activity-row__type--block">BLOCK</span>
+                <span class="zt-activity-row__src">185.220.101.44</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">10.0.1.50</span>
+                <span class="zt-activity-row__proto">SSH</span>
+                <span class="zt-activity-row__action">Brute Force</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--incoming">
+                <span class="zt-activity-row__time">12:47:18</span>
+                <span class="zt-activity-row__type zt-activity-row__type--allow">ALLOW</span>
+                <span class="zt-activity-row__src">10.0.5.22</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">192.168.2.50</span>
+                <span class="zt-activity-row__proto">API</span>
+                <span class="zt-activity-row__action">Authorized</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--blocked">
+                <span class="zt-activity-row__time">12:47:15</span>
+                <span class="zt-activity-row__type zt-activity-row__type--block">BLOCK</span>
+                <span class="zt-activity-row__src">45.33.32.156</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">10.0.0.5</span>
+                <span class="zt-activity-row__proto">SQL</span>
+                <span class="zt-activity-row__action">Injection</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--incoming">
+                <span class="zt-activity-row__time">12:47:12</span>
+                <span class="zt-activity-row__type zt-activity-row__type--allow">ALLOW</span>
+                <span class="zt-activity-row__src">10.0.3.88</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">192.168.3.10</span>
+                <span class="zt-activity-row__proto">LDAP</span>
+                <span class="zt-activity-row__action">Verified</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--blocked">
+                <span class="zt-activity-row__time">12:47:08</span>
+                <span class="zt-activity-row__type zt-activity-row__type--block">BLOCK</span>
+                <span class="zt-activity-row__src">103.235.46.78</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">10.0.2.15</span>
+                <span class="zt-activity-row__proto">DNS</span>
+                <span class="zt-activity-row__action">Tunneling</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--incoming">
+                <span class="zt-activity-row__time">12:47:05</span>
+                <span class="zt-activity-row__type zt-activity-row__type--allow">ALLOW</span>
+                <span class="zt-activity-row__src">10.0.7.33</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">192.168.1.200</span>
+                <span class="zt-activity-row__proto">RDP</span>
+                <span class="zt-activity-row__action">MFA OK</span>
+              </div>
+              <div class="zt-activity-row zt-activity-row--blocked">
+                <span class="zt-activity-row__time">12:47:02</span>
+                <span class="zt-activity-row__type zt-activity-row__type--block">BLOCK</span>
+                <span class="zt-activity-row__src">78.46.89.201</span>
+                <span class="zt-activity-row__arrow" aria-hidden="true">→</span>
+                <span class="zt-activity-row__dst">10.0.0.1</span>
+                <span class="zt-activity-row__proto">ICMP</span>
+                <span class="zt-activity-row__action">Flood</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: SECURITY ANALYTICS
+           ==================================================== -->
+      <section class="zt-section" aria-labelledby="analytics-heading">
+        <h2 id="analytics-heading" class="zt-section__title ease-slide-in-from-left">Security Analytics</h2>
+
+        <div class="zt-analytics-grid">
+          <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-100">
+            <div class="zt-panel__scanline" aria-hidden="true"></div>
+            <header class="zt-panel__header">
+              <h3 class="zt-panel__title">Threat Classification</h3>
+            </header>
+            <div class="zt-panel__body">
+              <div class="zt-chart" role="img" aria-label="Threat classification bar chart">
+                <div class="zt-chart__bar-group">
+                  <div class="zt-chart__bar-label">Malware</div>
+                  <div class="zt-chart__bar-track">
+                    <div class="zt-chart__bar zt-chart__bar--red" style="width: 42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="zt-chart__bar-value">42%</div>
+                </div>
+                <div class="zt-chart__bar-group">
+                  <div class="zt-chart__bar-label">Phishing</div>
+                  <div class="zt-chart__bar-track">
+                    <div class="zt-chart__bar zt-chart__bar--orange" style="width: 28%" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="zt-chart__bar-value">28%</div>
+                </div>
+                <div class="zt-chart__bar-group">
+                  <div class="zt-chart__bar-label">DDoS</div>
+                  <div class="zt-chart__bar-track">
+                    <div class="zt-chart__bar zt-chart__bar--yellow" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="zt-chart__bar-value">15%</div>
+                </div>
+                <div class="zt-chart__bar-group">
+                  <div class="zt-chart__bar-label">Insider</div>
+                  <div class="zt-chart__bar-track">
+                    <div class="zt-chart__bar zt-chart__bar--cyan" style="width: 10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="zt-chart__bar-value">10%</div>
+                </div>
+                <div class="zt-chart__bar-group">
+                  <div class="zt-chart__bar-label">Zero-Day</div>
+                  <div class="zt-chart__bar-track">
+                    <div class="zt-chart__bar zt-chart__bar--purple" style="width: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="zt-chart__bar-value">5%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="zt-panel zt-panel--glass ease-fade-in ease-delay-200">
+            <div class="zt-panel__scanline" aria-hidden="true"></div>
+            <header class="zt-panel__header">
+              <h3 class="zt-panel__title">Security Score Breakdown</h3>
+            </header>
+            <div class="zt-panel__body">
+              <div class="zt-score-grid">
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Network Security</span>
+                  <span class="zt-score-item__value">97%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill" style="width: 97%" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Endpoint Protection</span>
+                  <span class="zt-score-item__value">94%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill" style="width: 94%" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Identity Security</span>
+                  <span class="zt-score-item__value">99%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill zt-score-item__fill--cyan" style="width: 99%" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Data Protection</span>
+                  <span class="zt-score-item__value">96%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill zt-score-item__fill--purple" style="width: 96%" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Cloud Security</span>
+                  <span class="zt-score-item__value">92%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill zt-score-item__fill--orange" style="width: 92%" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="zt-score-item">
+                  <span class="zt-score-item__label">Compliance</span>
+                  <span class="zt-score-item__value">100%</span>
+                  <div class="zt-score-item__bar">
+                    <div class="zt-score-item__fill zt-score-item__fill--green" style="width: 100%" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SECTION: INCIDENT RESPONSE CARDS
+           ==================================================== -->
+      <section id="incidents" class="zt-section" aria-labelledby="incidents-heading">
+        <h2 id="incidents-heading" class="zt-section__title ease-slide-in-from-left">Incident Response</h2>
+
+        <div class="zt-incidents-grid">
+          <article class="zt-incident zt-incident--critical ease-fade-in ease-delay-100" role="alert" aria-live="assertive">
+            <div class="zt-incident__glow" aria-hidden="true"></div>
+            <div class="zt-incident__header">
+              <span class="zt-incident__severity" aria-hidden="true"></span>
+              <span class="zt-incident__badge">Critical</span>
+              <span class="zt-incident__time">2m ago</span>
+            </div>
+            <h4 class="zt-incident__title">Ransomware Outbreak Detected</h4>
+            <p class="zt-incident__desc">Active encryption attempt on file servers. Automated isolation initiated.</p>
+            <div class="zt-incident__actions">
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--danger">Contain</button>
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--ghost">Investigate</button>
+            </div>
+          </article>
+
+          <article class="zt-incident zt-incident--high ease-fade-in ease-delay-200" role="alert" aria-live="assertive">
+            <div class="zt-incident__glow" aria-hidden="true"></div>
+            <div class="zt-incident__header">
+              <span class="zt-incident__severity" aria-hidden="true"></span>
+              <span class="zt-incident__badge">High</span>
+              <span class="zt-incident__time">8m ago</span>
+            </div>
+            <h4 class="zt-incident__title">Privilege Escalation Attempt</h4>
+            <p class="zt-incident__desc">Unauthorized admin access attempt detected from internal workstation.</p>
+            <div class="zt-incident__actions">
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--danger">Revoke</button>
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--ghost">Trace</button>
+            </div>
+          </article>
+
+          <article class="zt-incident zt-incident--medium ease-fade-in ease-delay-300" role="status" aria-live="polite">
+            <div class="zt-incident__glow" aria-hidden="true"></div>
+            <div class="zt-incident__header">
+              <span class="zt-incident__severity" aria-hidden="true"></span>
+              <span class="zt-incident__badge">Medium</span>
+              <span class="zt-incident__time">15m ago</span>
+            </div>
+            <h4 class="zt-incident__title">Suspicious Outbound Traffic</h4>
+            <p class="zt-incident__desc">Data exfiltration pattern detected on port 443 to unknown endpoint.</p>
+            <div class="zt-incident__actions">
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--primary">Block</button>
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--ghost">Analyze</button>
+            </div>
+          </article>
+
+          <article class="zt-incident zt-incident--low ease-fade-in ease-delay-350" role="status" aria-live="polite">
+            <div class="zt-incident__glow" aria-hidden="true"></div>
+            <div class="zt-incident__header">
+              <span class="zt-incident__severity" aria-hidden="true"></span>
+              <span class="zt-incident__badge">Low</span>
+              <span class="zt-incident__time">32m ago</span>
+            </div>
+            <h4 class="zt-incident__title">Unusual Login Location</h4>
+            <p class="zt-incident__desc">User login from unrecognized geographic location. MFA challenge sent.</p>
+            <div class="zt-incident__actions">
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--primary">Verify</button>
+              <button class="ease-btn zt-btn zt-btn--small zt-btn--ghost">Dismiss</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           FOOTER
+           ==================================================== -->
+      <footer class="zt-footer" role="contentinfo">
+        <div class="zt-footer__inner">
+          <div class="zt-footer__brand">
+            <span class="zt-footer__logo" aria-hidden="true">✦</span>
+            <span class="zt-footer__name">ZT-SOC Phase #707</span>
+          </div>
+          <p class="zt-footer__text">
+            Zero-Trust Holographic Security Operations Center &mdash; Phase #707 Showcase<br>
+            Built with <a href="https://github.com/Nilamma19/EaseMotion-css" target="_blank" rel="noopener noreferrer">EaseMotion CSS</a> &mdash; Zero JavaScript, 60fps optimized
+          </p>
+          <div class="zt-footer__status">
+            <span class="zt-footer__status-dot" aria-hidden="true"></span>
+            <span>All systems operational</span>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
